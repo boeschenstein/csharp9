@@ -29,7 +29,7 @@ From Claudio Bernasconi: https://www.youtube.com/watch?v=5GQ57TUqNoQ
 
 ### Example
 
-'''cs
+''' cs
 using System;
 
 public record Person(String firstName, String lastName); // check this in https://sharplab.io/
@@ -41,7 +41,7 @@ namespace System.Runtime.CompilerServices{
 
 Execute RecordType:
 
-'''
+''' cs
 using System;
 
 public record Person(String firstName, String lastName);
@@ -63,7 +63,7 @@ namespace System.Runtime.CompilerServices{
 
 Initialization both ways: need 2 constructors:
 
-'''
+''' cs
 using System;
 
 public record Car {
