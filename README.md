@@ -29,7 +29,8 @@ From Claudio Bernasconi: https://www.youtube.com/watch?v=5GQ57TUqNoQ
 
 ### Example
 
-''' cs
+''' c#
+
 using System;
 
 public record Person(String firstName, String lastName); // check this in https://sharplab.io/
@@ -37,11 +38,13 @@ public record Person(String firstName, String lastName); // check this in https:
 namespace System.Runtime.CompilerServices{
     public sealed class IsExternalInit{}
 }
+
 '''
 
 Execute RecordType:
 
-''' cs
+''' c#
+
 using System;
 
 public record Person(String firstName, String lastName);
@@ -59,11 +62,13 @@ namespace System.Runtime.CompilerServices{
         }
     }
 }
+
 '''
 
-Initialization both ways: need 2 constructors:
+Initialization both ways: need 2 constructors (avoid this if not needed: you might break immutability if you are not careful):
 
-''' cs
+''' c#
+
 using System;
 
 public record Car {
@@ -88,4 +93,5 @@ namespace System.Runtime.CompilerServices{
         }
     }
 }
+
 '''
